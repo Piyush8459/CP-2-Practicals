@@ -1,7 +1,7 @@
 // Ant on a Chessboard
 
-#include<cmath> 
-#include<cstdio>
+#include<math.h> 
+#include<stdio.h>
 
 int n, x, y;
 int main() {
