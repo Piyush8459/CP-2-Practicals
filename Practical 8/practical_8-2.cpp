@@ -23,10 +23,14 @@ int main() {
     int mx_car = 0, mx_len;
     for (i = 1; i <= n; i++) {
       for (j = 0; j <= length; j++) {
-        if (j - A[i] >= 0 && dp[i - 1][j - A[i]]) { // left dp[i][j] = 1;
+        if (j - A[i] >= 0 && dp[i - 1][j - A[i]]) 
+        { // left 
+          dp[i][j] = 1;
           pre[i][j] = 0; // left
         }
-        if (sum[i] - j <= length && dp[i - 1][j]) { // right dp[i][j] = 1;
+        if (sum[i] - j <= length && dp[i - 1][j]) 
+        { // right 
+          dp[i][j] = 1;
           pre[i][j] = 1; // right
         }
         if (dp[i][j])
